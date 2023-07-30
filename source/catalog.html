@@ -21,10 +21,10 @@
       <div class="navigation__wrapper">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#" aria-current="page">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link navigation__link--current" href="#" aria-current="page">Каталог продукции</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="form.html">Подбор программы</a>
@@ -34,8 +34,35 @@
     </nav>
   </header>
 
-  <main>
-
+  <main class="main-container">
+    <section class="catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <div class="catalog__wrapper">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="card">
+              <img class="card__image" src="https://dummyimage.com/140x112/000/fff" alt="Банка Кэт энерджи со вкусом курицы, 500 грамм">
+              <h2 class="card__title">Cat Energy PRO 500 г</h2>
+              <dl class="card__list">
+                <div class="card__item">
+                  <dt class="card__feature">Масса</dt>
+                  <dd class="card__value">500 г</dd>
+                </div>
+                <div class="card__item">
+                  <dt class="card__feature">Вкус</dt>
+                  <dd class="card__value">Курица</dd>
+                </div>
+                <div class="card__item">
+                  <dt class="card__feature">Цена</dt>
+                  <dd class="card__value">700 ₽</dd>
+                </div>
+              </dl>
+              <button class="button" type="button">Заказать</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
