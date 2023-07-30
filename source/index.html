@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body class="page__body">
-    <header class="header"></header>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo" href="#">
+      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+    </a>
+    <a class="header__logo" href="#">
+      <img class="header__logo-text" src="img/logo-mobile-text.svg" alt="Cat Energy" width="101" height="18">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__menu" type="button">
+        <span class="visually-hiden">Открыть меню.</span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#" aria-current="page">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>
