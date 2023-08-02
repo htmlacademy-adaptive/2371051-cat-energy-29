@@ -39,16 +39,41 @@
     <h1 class="main-container__title">Подбор программы</h1>
     <form class="form" action="https://echo.htmlacademy.ru/" method="get">
       <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__container">
         <legend class="visually-hiden">Данные вашего кота.</legend>
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="cat-name">Имя:*</label>
-            <input class="form__control" type="text" name="cat-name" id="cat-name">
+            <input class="form__control" type="text" name="cat-name" id="cat-name" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="cat-weight">Вес (кг):*</label>
+            <input class="form__control" type="number" name="cat-weight" id="cat-weight" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="cat-age">Возраст (лет):</label>
+            <input class="form__control" type="number" name="cat-age" id="cat-age">
           </li>
         </ul>
-
       </fieldset>
+      <fieldset class="form__container">
+        <legend class="visually-hiden">Выбор программы питания.</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="form__control" type="radio" name="program" id="program-slim" value="slim" checked>
+            <label class="form__label" for="program-slim">Похудение</label>
+          </li>
+          <li class="form__item">
+            <input class="form__control" type="radio" name="program" id="program-gain" value="gain">
+            <label class="form__label" for="program-gain">Набор массы</label>
+          </li>
+          <li class="form__item">
+            <input class="form__control" type="radio" name="program" id="program-advice" value="need-advice">
+            <label class="form__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button" type="submit">Отправить заявку</button>
     </form>
   </main>
 </body>
