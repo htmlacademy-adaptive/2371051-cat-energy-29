@@ -1,3 +1,7 @@
+.footer {
+  background-color: $basic-grey;
+}
+
 .footer__invitation {
   font-family: $oswald-font;
   color: #111111;
@@ -9,4 +13,8 @@
 .footer__adress {
   font-style: normal;
   line-height: 20px;
+}
+
+.footer__wrapper--index {
+  background-color: $basic-white;
 }

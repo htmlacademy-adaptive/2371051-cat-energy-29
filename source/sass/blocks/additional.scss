@@ -1,0 +1,12 @@
+.additional__title {
+  font-family: $oswald-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: $basic-black;
+}
+
+.additional__list {
+  @include list;
+}
