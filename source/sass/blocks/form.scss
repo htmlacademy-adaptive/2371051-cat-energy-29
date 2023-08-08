@@ -1,0 +1,45 @@
+.form {
+  font-family: $oswald-font;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include list;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__control {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+}
+
+.form__message {
+  font-family: $lato-font;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-black;
+}
