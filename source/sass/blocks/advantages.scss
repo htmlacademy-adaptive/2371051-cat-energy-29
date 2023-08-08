@@ -1,0 +1,11 @@
+.advantages__title {
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list;
+}

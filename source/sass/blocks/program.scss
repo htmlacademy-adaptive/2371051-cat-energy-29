@@ -1,0 +1,24 @@
+.program__title {
+  font-family: $oswald-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.program__list {
+  @include list;
+}
+
+.program__item {
+  background-color: $basic-grey;
+}
+
+.program__link {
+  font-family: $oswald-font;
+  color: $basic-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}

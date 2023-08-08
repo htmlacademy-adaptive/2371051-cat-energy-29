@@ -1,10 +1,20 @@
 .button {
   font-family: $oswald-font;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: $basic-white;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $basic-green;
+
+  &--hero {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.button--secondary {
+  color: $special-dark-grey;
+  background-color: $basic-grey;
 }
