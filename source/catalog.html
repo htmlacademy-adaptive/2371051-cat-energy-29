@@ -4,19 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи. Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="#">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
-    </a>
-    <a class="header__logo" href="#">
       <img class="header__logo-text" src="img/logo-mobile-text.svg" alt="Cat Energy." width="101" height="18">
     </a>
     <nav class="navigation">
       <button class="navigation__menu" type="button">
-        <span class="visually-hiden">Открыть меню.</span>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="navigation__wrapper">
         <ul class="navigation__list">
@@ -37,7 +36,7 @@
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
     <section class="catalog">
-      <h2 class="visually-hiden">Список товаров</h2>
+      <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="card">
@@ -66,10 +65,10 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="catalog__show-all show-all">
-            <p class="show-all__title">Показать еще 100500 товаров</p>
-            <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
-            <a class="show-all__button button" href="#">Показать все</a>
+          <div class="catalog__show-all">
+            <p class="catalog__subtitle">Показать еще 100500 товаров</p>
+            <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
+            <a class="button button--secondary" href="#">Показать все</a>
           </div>
         </li>
       </ul>
@@ -94,15 +93,17 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-    <address class="footer__adress">
-      <span class="footer__street">ул. Большая<br>
-        Конюшенная, д. 19/8</span>
-      <span class="footer__city">Санкт-Петербург</span>
-    </address>
+    <div class="footer__wrapper">
+      <p class="footer__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+      <address class="footer__adress">
+        <span class="footer__street">ул. Большая<br>
+          Конюшенная, д. 19/8</span>
+        <span class="footer__city">Санкт-Петербург</span>
+      </address>
+    </div>
     <img class="footer__map" src="img/map.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-    <a class="footer__logo" href="#">
-      <svg class="footer__image" width="128" height="24" viewBox="0 0 128 24" fill="none"
+    <a class="footer__logo footer-logo" href="#">
+      <svg class="footer-logo__image" width="128" height="24" viewBox="0 0 128 24" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_92526_133)">
           <path
@@ -142,7 +143,7 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hiden">Вконтакте</span>
+            <span class="visually-hidden">Вконтакте</span>
             <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -153,7 +154,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hiden">Ютуб</span>
+            <span class="visually-hidden">Ютуб</span>
             <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -164,7 +165,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hiden">Телеграмм</span>
+            <span class="visually-hidden">Телеграмм</span>
             <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"

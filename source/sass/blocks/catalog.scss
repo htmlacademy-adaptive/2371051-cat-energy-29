@@ -1,0 +1,18 @@
+.catalog__list {
+  @include list;
+}
+
+.catalog__subtitle {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

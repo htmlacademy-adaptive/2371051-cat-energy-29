@@ -1,0 +1,15 @@
+.card__title {
+  font-family: $oswald-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+}
+
+.card__feature,
+.card__value {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

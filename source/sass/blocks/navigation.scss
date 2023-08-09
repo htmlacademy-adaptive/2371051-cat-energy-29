@@ -1,0 +1,16 @@
+.navigation {
+  font-family: $oswald-font;
+  color: $basic-black;
+}
+
+.navigation__list {
+  @include list;
+}
+
+.navigation__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+}
