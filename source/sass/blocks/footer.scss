@@ -17,6 +17,19 @@
   line-height: 20px;
 }
 
+.footer__wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
 .footer__wrapper--index {
   background-color: #ffffff;
 }
+
+.footer__logo {
+  display: block;
+}
+
