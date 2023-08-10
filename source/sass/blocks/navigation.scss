@@ -1,6 +1,6 @@
 .navigation {
   font-family: $oswald-font;
-  color: $basic-black;
+  color: $title-color;
 }
 
 .navigation__list {
@@ -10,7 +10,7 @@
 .navigation__link {
   font-size: 20px;
   line-height: 20px;
-  color: $basic-black;
+  color: inherit;
   text-align: center;
   text-transform: uppercase;
 }

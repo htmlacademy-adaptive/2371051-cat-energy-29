@@ -3,10 +3,10 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: $basic-white;
+  color: $text-light;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $basic-green;
+  background-color: $button-color;
 
   &--hero {
     font-size: 14px;
@@ -15,6 +15,6 @@
 }
 
 .button--secondary {
-  color: $special-dark-grey;
-  background-color: $basic-grey;
+  color: $basic-text;
+  background-color: $highlight-background;
 }

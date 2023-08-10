@@ -1,5 +1,5 @@
 .example {
-  background-color: $basic-grey;
+  background-color: $highlight-background;
 }
 
 .example__title {
@@ -8,12 +8,12 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: $basic-black;
+  color: $title-color;
 }
 
 .example__value {
   font-family: $oswald-font;
-  color: $basic-black;
+  color: #000000;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -28,7 +28,7 @@
 
 .example__expenses {
   font-family: $oswald-font;
-  color: $basic-black;
+  color: #000000;
   font-size: 14px;
   line-height: 20px;
   text-align: center;

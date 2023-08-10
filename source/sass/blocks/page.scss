@@ -1,7 +1,9 @@
 .page__body {
+  margin: 0;
+
   font-family: $lato-font;
   font-size: 14px;
   line-height: 18px;
-  background-color: $basic-white;
-  color: $special-dark-grey;
+  background-color: #ffffff;
+  color: $basic-text;
 }

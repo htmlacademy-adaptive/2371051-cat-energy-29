@@ -3,7 +3,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $basic-black;
+  color: $title-color;
 }
 
 .program__list {
@@ -11,12 +11,12 @@
 }
 
 .program__item {
-  background-color: $basic-grey;
+  background-color: $highlight-background;
 }
 
 .program__link {
   font-family: $oswald-font;
-  color: $basic-black;
+  color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
