@@ -11,15 +11,17 @@
 <body class="page__body">
 
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
-      <img class="header__logo-text" src="img/logo-mobile-text.svg" alt="Cat Energy." width="101" height="18">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__menu" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <div class="navigation__wrapper">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
+          <img class="logo__text" src="img/logo-mobile-text.svg" alt="Cat Energy." width="101" height="18">
+        </a>
+        <button class="header__burger" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+      </div>
+      <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -31,8 +33,8 @@
             <a class="navigation__link navigation__link--current" href="#" aria-current="page">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
@@ -78,7 +80,8 @@
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="e-mail">E-mail:*</label>
-            <input class="form__control" type="email" name="e-mail" id="e-mail" placeholder="кuklachev@gmail.com" required>
+            <input class="form__control" type="email" name="e-mail" id="e-mail" placeholder="кuklachev@gmail.com"
+              required>
           </li>
           <li class="form__item">
             <label class="form__label" for="phone">Телефон:*</label>
@@ -89,7 +92,8 @@
       <fieldset>
         <legend class="form__title">Комментарий</legend>
         <label class="visually-hidden" for="comment">Оставьте Комментарий</label>
-        <textarea class="form__control" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__control" name="comment" id="comment" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__container">
         <legend class="form__title">Дополнительно</legend>
@@ -137,8 +141,7 @@
           <path
             d="M19.3483 0.306396H25.0563L29.2622 23.5915H24.6557L23.8546 18.6894H20.55L19.7489 23.5915H15.0423L19.3483 0.306396ZM23.454 15.6255L22.2524 6.53618L21.0507 15.6255H23.454Z"
             fill="#111111" />
-          <path d="M32.767 4.18725H29.3623V0.306396H41.2789V4.08512H37.8742V23.5915H32.767V4.18725Z"
-            fill="#111111" />
+          <path d="M32.767 4.18725H29.3623V0.306396H41.2789V4.08512H37.8742V23.5915H32.767V4.18725Z" fill="#111111" />
           <path
             d="M50.3916 0.306396H59.2039V2.75746H53.496V10.417H58.1024V12.766H53.496V21.3447H59.2039V23.6936H50.2915V0.306396H50.3916Z"
             fill="#111111" />
@@ -205,8 +208,8 @@
     <div class="footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__image" role="img" aria-label="Академия HTML" width="27" height="34" viewBox="0 0 27 34" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="copyright__image" role="img" aria-label="Академия HTML" width="27" height="34" viewBox="0 0 27 34"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
             fill="#666666" />

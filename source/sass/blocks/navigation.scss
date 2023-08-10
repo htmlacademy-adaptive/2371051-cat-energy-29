@@ -6,6 +6,11 @@
 .navigation__list {
   @include list;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 .navigation__link {

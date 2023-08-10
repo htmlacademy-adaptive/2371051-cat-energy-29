@@ -1,4 +1,19 @@
+.header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.header__burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

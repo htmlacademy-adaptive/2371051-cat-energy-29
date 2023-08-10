@@ -3,6 +3,12 @@
   text-align: center;
   color: $text-light;
   background-color: $theme-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    color: $title-color;
+    background-color: #ffffff;
+  }
 }
 
 .hero__title {
