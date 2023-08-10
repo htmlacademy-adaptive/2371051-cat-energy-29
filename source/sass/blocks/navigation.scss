@@ -5,12 +5,12 @@
 
 .navigation__list {
   @include list;
+  text-align: center;
 }
 
 .navigation__link {
   font-size: 20px;
   line-height: 20px;
   color: inherit;
-  text-align: center;
   text-transform: uppercase;
 }

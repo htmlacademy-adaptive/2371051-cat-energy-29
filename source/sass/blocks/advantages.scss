@@ -1,4 +1,6 @@
 .advantages__title {
+  margin: 0;
+
   font-family: $oswald-font;
   font-weight: 400;
   font-size: 36px;
@@ -9,4 +11,21 @@
 
 .advantages__list {
   @include list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages__description {
+  margin: 0;
 }

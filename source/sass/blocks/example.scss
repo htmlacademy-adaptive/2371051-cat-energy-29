@@ -3,12 +3,22 @@
 }
 
 .example__title {
+  margin: 0;
+
   font-family: $oswald-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: $title-color;
+}
+
+.example__text {
+  margin: 0;
+}
+
+.example__list {
+  margin: 0;
 }
 
 .example__value {
@@ -21,12 +31,16 @@
 }
 
 .example__description {
+  margin: 0;
+
   font-size: 12px;
   line-height: 12px;
   text-align: center;
 }
 
 .example__expenses {
+  margin: 0;
+
   font-family: $oswald-font;
   color: #000000;
   font-size: 14px;
