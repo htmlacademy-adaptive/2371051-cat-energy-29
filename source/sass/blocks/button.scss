@@ -9,6 +9,8 @@
   background-color: $button-color;
 
   &--hero {
+    display: block;
+    padding: 8px 10px;
     font-size: 14px;
     line-height: 18px;
   }
