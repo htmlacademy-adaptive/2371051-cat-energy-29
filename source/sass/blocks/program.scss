@@ -1,20 +1,21 @@
 .program__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 20px;
 
   @include list;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
   }
 }
 
 .program__item {
   min-height: 266px;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
   background-color: $highlight-background;
 
@@ -23,9 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    &:not(:last-child) {
-      margin-right: 80px;
-    }
     min-height: 374px;
   }
 }

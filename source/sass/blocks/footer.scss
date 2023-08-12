@@ -19,9 +19,21 @@
 
 .footer__wrapper {
   display: flex;
+  min-height: 112px;
 
   @media (min-width: $tablet-width) {
+    min-height: 200px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
+}
+
+.footer__city {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
