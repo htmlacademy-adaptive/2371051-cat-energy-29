@@ -2,6 +2,10 @@
   background-color: $highlight-background;
 }
 
+.footer__container--index {
+  background-color: #ffffff;
+}
+
 .footer__invitation {
   margin: 0;
 
@@ -18,10 +22,12 @@
 }
 
 .footer__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
   min-height: 112px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     min-height: 200px;
     justify-content: space-between;
   }
@@ -35,10 +41,6 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-}
-
-.footer__wrapper--index {
-  background-color: #ffffff;
 }
 
 .footer__links-wrapper {
