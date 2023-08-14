@@ -1,4 +1,23 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.card__image-link {
+  display: block;
+}
+
+.card__link {
+  display: block;
+}
+
 .card__title {
+  margin: 0;
+
   font-family: $oswald-font;
   font-size: 20px;
   line-height: 20px;
@@ -7,9 +26,27 @@
   text-transform: uppercase;
 }
 
+.card__list {
+  @include list;
+  width: 140px;
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__feature,
 .card__value {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+.card__value {
+  margin: 0;
+}
+
+.card__button {
+  grid-column: 1/-1;
 }

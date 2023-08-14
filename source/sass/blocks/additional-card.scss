@@ -1,16 +1,52 @@
+.additional-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+}
+
 .additional-card__title {
+  grid-column: 1/-1;
+  margin: 0;
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   color: $card-text;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .additional-card__description,
 .additional-card__price {
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
+}
+
+.additional-card__description {
+  margin-right: 50px;
+}
+
+.additional-card__price {
+  text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.additional-card__button {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
