@@ -1,8 +1,9 @@
 .program__list {
+  @include list;
+
   display: grid;
   gap: 20px;
-
-  @include list;
+  padding: 20px 0;
 
   @media (min-width: $desktop-width) {
     gap: 30px;
@@ -15,6 +16,7 @@
 }
 
 .program__item {
+  padding: 21px 20px 18px 20px;
   min-height: 266px;
 
   background-color: $highlight-background;
@@ -29,6 +31,10 @@
 }
 
 .program__title {
+  display: block;
+  margin-bottom: 29px;
+  padding-left: 70px;
+
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 37px;
@@ -37,14 +43,17 @@
 }
 
 .program__link {
+  display: block;
+  margin-top: 15px;
+
   font-family: $oswald-font;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .program__description {
   margin: 0;
+  padding-bottom: 23px;
 }
