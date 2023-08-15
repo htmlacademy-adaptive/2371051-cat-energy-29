@@ -1,5 +1,10 @@
 .additional {
   padding-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 80px 235px;
+  }
 }
 
 .additional__title {
@@ -10,8 +15,22 @@
   line-height: 24px;
   font-weight: 400;
   color: $title-color;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .additional__list {
   @include list;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
+}
+
+.additional__gift {
+  @media (min-width: $desktop-width) {
+    grid-column: -1/-2;
+  }
 }

@@ -6,7 +6,12 @@
     padding: 26px 38px 28px 38px;
     display: flex;
     flex-wrap: wrap;
-    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 80px 245px 80px 245px;
+    padding: 0;
   }
 }
 
@@ -23,6 +28,10 @@
   @media (min-width: $tablet-width) {
     margin-right: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .additional-card__description,
@@ -32,7 +41,13 @@
 }
 
 .additional-card__description {
-  margin-right: 50px;
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+  }
 }
 
 .additional-card__price {
@@ -41,6 +56,10 @@
   @media (min-width: $desktop-width) {
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
 }
 
 .additional-card__button {
@@ -48,5 +67,9 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: -1/-2;
   }
 }
