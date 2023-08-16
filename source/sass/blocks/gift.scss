@@ -1,10 +1,21 @@
 .gift {
-  background-color: $theme-color;
-  color: $text-light;
   min-height: 290px;
+  color: $text-light;
+
+  background-color: $theme-color;
+  background-image: url("../img/backgrounds/gift-background-small.png");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
+
+    background-image: url("../img/backgrounds/gift-background-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 288px;
+    background-image: url("../img/backgrounds/gift-background-small.png");
+    background-position: right top;
   }
 }
 
