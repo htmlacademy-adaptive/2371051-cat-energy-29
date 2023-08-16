@@ -42,8 +42,8 @@
     <form class="form container" action="https://echo.htmlacademy.ru/" method="post">
       <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <div class="form__wrapper">
-        <fieldset class="form__field">
-          <legend class="visually-hidden">Данные вашего кота.</legend>
+        <div class="form__field" role="group" aria-labelledby="cat-information">
+          <h2 class="visually-hidden" id="cat-information">Данные вашего кота.</h2>
           <ul class="form__list">
             <li class="form__item form__item--text">
               <label class="form__label" for="cat-name">Имя:*</label>
@@ -58,9 +58,9 @@
               <input class="form__control form__control--text" type="number" name="cat-age" id="cat-age" placeholder="7">
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="form__field">
-          <legend class="visually-hidden">Выбор программы питания.</legend>
+        </div>
+        <div class="form__field" role="group" aria-labelledby="feed-program">
+          <h2 class="visually-hidden" id="feed-program">Выбор программы питания.</h2>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__control" type="radio" name="program" id="program-slim" value="slim" checked>
@@ -75,10 +75,10 @@
               <label class="form__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
       </div>
-      <fieldset class="form__field">
-        <legend class="form__title">Контактные данные (владельца кота)</legend>
+      <div class="form__field" role="group" aria-labelledby="cats-owner">
+        <h2 class="form__title" id="cats-owner">Контактные данные (владельца кота)</h2>
         <ul class="form__list">
           <li class="form__item form__item--text">
             <label class="form__label" for="e-mail">E-mail:*</label>
@@ -90,15 +90,15 @@
             <input class="form__control form__control--text" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
-      </fieldset>
-      <fieldset class="form__field">
-        <legend class="form__title">Комментарий</legend>
+      </div>
+      <div class="form__field" role="group" aria-labelledby="comments-field">
+        <h2 class="form__title" id="comments-field">Комментарий</h2>
         <label class="visually-hidden" for="comment">Оставьте Комментарий</label>
         <textarea class="form__control" name="comment" id="comment" cols="30" rows="10"
           placeholder="Расскажите обо всех повадках кота"></textarea>
-      </fieldset>
-      <fieldset class="form__field">
-        <legend class="form__title">Дополнительно</legend>
+      </div>
+      <div class="form__field" role="group" aria-labelledby="additional-products">
+        <h2 class="form__title" id="additional-products">Дополнительно</h2>
         <ul class="form__list form__list--additionally">
           <li class="form__item">
             <input class="form__control" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -117,7 +117,7 @@
             <label class="form__label" for="vitamins">Витамины</label>
           </li>
         </ul>
-      </fieldset>
+      </div>
       <button class="button form__button" type="submit">Отправить заявку</button>
       <span class="form__message">* — Обязательные поля</span>
     </form>
