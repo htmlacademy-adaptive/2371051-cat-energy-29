@@ -5,11 +5,15 @@
   text-align: center;
   color: $text-light;
   background-color: $theme-color;
+  background-image: url("../img/backgrounds/background-hero.png"), linear-gradient(to bottom, $theme-color 303px, #ffffff 303px);
+  background-repeat: no-repeat;
+  background-position: top center;
 
   @media (min-width: $tablet-width) {
     text-align: start;
     color: $title-color;
     background-color: #ffffff;
+    background-image: none;
   }
 }
 
