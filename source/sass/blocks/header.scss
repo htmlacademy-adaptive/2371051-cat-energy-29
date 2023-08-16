@@ -4,6 +4,7 @@
     align-items: baseline;
     justify-content: space-between;
     min-height: 50px;
+    margin-top: 25px;
   }
 }
 
@@ -11,6 +12,10 @@
   padding: 13px 0 14px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .header__burger {
