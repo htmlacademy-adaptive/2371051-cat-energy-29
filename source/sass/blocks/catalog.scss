@@ -5,12 +5,19 @@
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
+
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+
+    width: 1300px;
+    padding: 0 40px;
   }
 }
 
@@ -27,4 +34,16 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+.catalog__card-wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
 }
