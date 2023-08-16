@@ -2,15 +2,49 @@
   font-family: $oswald-font;
 }
 
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .form__text {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__list {
   @include list;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__list--additionally {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__item--text {
+  display: flex;
 }
 
 .form__label {
@@ -29,6 +63,10 @@
   &::placeholder {
     color: $basic-text;
   }
+}
+
+.form__control--text {
+  flex-grow: 1;
 }
 
 .form__title {

@@ -20,6 +20,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 430px;
+  }
 }
 
 .hero__slogan {
@@ -29,6 +35,12 @@
   font-size: 14px;
   text-transform: uppercase;
   line-height: 14px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__image {
