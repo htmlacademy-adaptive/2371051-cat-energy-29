@@ -1,11 +1,23 @@
+.program__container {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
 .program__list {
   @include list;
 
   display: grid;
   gap: 20px;
-  padding: 20px 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     gap: 30px;
   }
 
