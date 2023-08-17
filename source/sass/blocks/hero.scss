@@ -15,6 +15,13 @@
   }
 }
 
+.hero--index {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/background-index-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a73b 50%);
+    background-position: right top;
+  }
+}
+
 .hero__container {
   padding-top: 27px;
 
@@ -23,11 +30,15 @@
     padding: 65px 10px 0 90px;
     min-height: 875px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+  }
 }
 
 .hero__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-weight: 400;
   font-size: 36px;

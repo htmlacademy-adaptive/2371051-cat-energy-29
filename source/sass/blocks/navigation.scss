@@ -3,6 +3,12 @@
   color: $title-color;
 }
 
+.navigation--index {
+  @media (min-width: $desktop-width) {
+    color: $text-light;
+  }
+}
+
 .navigation__list {
   @include list;
   text-align: center;
