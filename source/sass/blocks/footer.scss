@@ -28,12 +28,20 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 .footer__wrapper {
+  position: relative;
+}
+
+.footer__wrapper-partnership {
   padding-top: 26px;
   padding-bottom: 26px;
   display: grid;
@@ -44,12 +52,15 @@
     display: flex;
     min-height: 200px;
     justify-content: space-between;
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    top: 95px;
     width: 565px;
     background-color: #ffffff;
+    padding: 60px 78px 60px 80px;
   }
 }
 
@@ -60,14 +71,21 @@
 }
 
 .footer__links-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   padding: 40px 0;
+  row-gap: 40px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 55px 0;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
   }
 }
 
