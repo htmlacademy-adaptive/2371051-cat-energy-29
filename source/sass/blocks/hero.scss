@@ -1,11 +1,9 @@
 .hero {
-  padding-top: 27px;
-
   font-family: $oswald-font;
   text-align: center;
   color: $text-light;
   background-color: $theme-color;
-  background-image: url("../img/backgrounds/background-hero.png"), linear-gradient(to bottom, $theme-color 303px, #ffffff 303px);
+  background-image: url("../img/backgrounds/background-hero.png"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -14,6 +12,16 @@
     color: $title-color;
     background-color: #ffffff;
     background-image: none;
+  }
+}
+
+.hero__container {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 65px 10px 0 90px;
+    min-height: 875px;
   }
 }
 
@@ -26,6 +34,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
     width: 430px;
@@ -42,6 +51,7 @@
 
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -50,4 +60,18 @@
 .hero__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+  }
+}
+
+.hero__button {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
