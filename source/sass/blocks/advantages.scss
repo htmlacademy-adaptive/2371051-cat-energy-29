@@ -26,7 +26,27 @@
 }
 
 .advantages__item {
-  padding-left: 80px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  background-color: $theme-color;
+
+  @media (min-width: $tablet-width) {
+    float: none;
+  }
 }
 
 .advantages__description {
