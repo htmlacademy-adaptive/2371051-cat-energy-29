@@ -1,5 +1,6 @@
 .button {
   display: block;
+  padding: 8px 10px;
 
   font-family: $oswald-font;
   font-size: 16px;
@@ -11,7 +12,6 @@
   background-color: $button-color;
 
   &--hero {
-    padding: 8px 10px;
     font-size: 14px;
     line-height: 18px;
 
