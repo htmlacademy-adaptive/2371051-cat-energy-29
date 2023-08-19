@@ -45,6 +45,8 @@
 
 .form__item--text {
   display: flex;
+  align-items: center;
+  gap: 13px;
 }
 
 .form__label {
@@ -65,7 +67,12 @@
   }
 }
 
+// .form__control--radio {
+//   appearance: none;
+// }
+
 .form__control--text {
+  height: 45px;
   flex-grow: 1;
 }
 

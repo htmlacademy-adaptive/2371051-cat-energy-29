@@ -10,6 +10,8 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $button-color;
+  border: none;
+  cursor: pointer;
 
   &--hero {
     font-size: 14px;
