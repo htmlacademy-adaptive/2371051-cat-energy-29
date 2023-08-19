@@ -62,15 +62,15 @@
         <div class="form__field" role="group" aria-labelledby="feed-program">
           <h2 class="visually-hidden" id="feed-program">Выбор программы питания.</h2>
           <ul class="form__list">
-            <li class="form__item">
+            <li class="form__item form__item--radio">
               <input class="form__control form__control--radio" type="radio" name="program" id="program-slim" value="slim" checked>
               <label class="form__label" for="program-slim">Похудение</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--radio">
               <input class="form__control form__control--radio" type="radio" name="program" id="program-gain" value="gain">
               <label class="form__label" for="program-gain">Набор массы</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--radio">
               <input class="form__control form__control--radio" type="radio" name="program" id="program-advice" value="need-advice">
               <label class="form__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
             </li>
@@ -96,7 +96,7 @@
       <div class="form__field">
         <label class="form__title" for="comment">Оставьте Комментарий</label>
         <div class="container">
-          <textarea class="form__control" name="comment" id="comment" cols="30" rows="10"
+          <textarea class="form__control form__control--textarea" name="comment" id="comment" cols="30" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
@@ -104,20 +104,20 @@
         <h2 class="form__title" id="additional-products">Дополнительно</h2>
         <div class="container">
           <ul class="form__list form__list--additionally">
-            <li class="form__item">
-              <input class="form__control" type="checkbox" name="sweetener" id="sweetener" checked>
+            <li class="form__item form__item--checkbox">
+              <input class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="form__label" for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="form__item">
-              <input class="form__control" type="checkbox" name="water" id="water">
+            <li class="form__item form__item--checkbox">
+              <input class="form__control form__control--checkbox" type="checkbox" name="water" id="water">
               <label class="form__label" for="water">Питьевая вода</label>
             </li>
-            <li class="form__item">
-              <input class="form__control" type="checkbox" name="milk" id="milk">
+            <li class="form__item form__item--checkbox">
+              <input class="form__control form__control--checkbox" type="checkbox" name="milk" id="milk">
               <label class="form__label" for="milk">Молоко</label>
             </li>
-            <li class="form__item">
-              <input class="form__control" type="checkbox" name="vitamins" id="vitamins">
+            <li class="form__item form__item--checkbox">
+              <input class="form__control form__control--checkbox" type="checkbox" name="vitamins" id="vitamins">
               <label class="form__label" for="vitamins">Витамины</label>
             </li>
           </ul>
