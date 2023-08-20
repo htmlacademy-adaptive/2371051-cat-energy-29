@@ -38,6 +38,15 @@
 }
 
 .header__burger {
+  width: 38px;
+  height: 38px;
+  border: none;
+
+  background-color: #ffffff;
+  background-image: url("../img/icons/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

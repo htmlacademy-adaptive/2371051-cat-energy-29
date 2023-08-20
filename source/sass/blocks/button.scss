@@ -15,14 +15,10 @@
   cursor: pointer;
 
   &--hero {
-    font-size: 14px;
-    line-height: 18px;
-    min-height: 54px;
-
     @media (min-width: $tablet-width) {
-      padding: 14px 10px;
       width: 244px;
-
+      padding: 14px 10px;
+      min-height: 54px;
       font-size: 20px;
       line-height: 26px;
     }
