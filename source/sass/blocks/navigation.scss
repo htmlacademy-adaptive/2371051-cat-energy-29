@@ -19,6 +19,14 @@
   }
 }
 
+.navigation__item {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .navigation__link {
   display: block;
   padding: 22px 0 24px;
@@ -35,6 +43,29 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__link--current::after {
+    position: absolute;
+    content: "";
+    background-color: $theme-color;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    bottom: -10px;
+  }
+
+  .navigation__link--current_index::after {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    bottom: -8px;
   }
 }

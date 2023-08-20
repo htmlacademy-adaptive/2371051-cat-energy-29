@@ -4,6 +4,34 @@
   background-color: #eaeaea;
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "title slider"
+      "text slider"
+      "descriptions slider";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    grid-area: title;
+  }
+
+  .example__text {
+    grid-area: text;
+  }
+
+  .example__wrapper {
+    grid-area: descriptions;
+  }
+
+  .example__slider {
+    grid-area: slider;
+  }
+}
+
 .example__title {
   margin: 0;
   margin-bottom: 40px;
@@ -61,6 +89,8 @@
 }
 
 .example__value {
+  margin-bottom: 8px;
+
   font-family: $oswald-font;
   color: #000000;
   font-size: 24px;

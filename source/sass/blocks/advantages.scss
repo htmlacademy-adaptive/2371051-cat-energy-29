@@ -7,6 +7,11 @@
   font-size: 36px;
   line-height: 40px;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -18,10 +23,13 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 250px 250px;
+    row-gap: 37px;
+    column-gap: 136px;
+    counter-reset: item;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -30,7 +38,21 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: block;
+    min-height: 280px;
+
+    &::after {
+      position: absolute;
+      top: 90px;
+      left: 110px;
+      font-family: $oswald-font;
+      color: #f2f2f2;
+      font-size: 280px;
+      counter-increment: item;
+      content: counter(item);
+      z-index: -1;
+    }
   }
 }
 
