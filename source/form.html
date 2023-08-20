@@ -38,49 +38,57 @@
   </header>
 
   <main class="main-container">
-    <h1 class="main-container__title container">Подбор программы</h1>
+    <div class="container--form">
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
+    </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <p class="form__text container">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <div class="form__wrapper container">
-        <div class="form__field" role="group" aria-labelledby="cat-information">
-          <h2 class="visually-hidden" id="cat-information">Данные вашего кота.</h2>
-          <ul class="form__list">
-            <li class="form__item form__item--text">
-              <label class="form__label" for="cat-name">Имя:*</label>
-              <input class="form__control form__control--text" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-            </li>
-            <li class="form__item form__item--text">
-              <label class="form__label" for="cat-weight">Вес (кг):*</label>
-              <input class="form__control form__control--text" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-            </li>
-            <li class="form__item form__item--text">
-              <label class="form__label" for="cat-age">Возраст (лет):</label>
-              <input class="form__control form__control--text" type="number" name="cat-age" id="cat-age" placeholder="7">
-            </li>
-          </ul>
+      <div class="container--form">
+        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+      <div class="form__wrapper">
+        <div class="form__field-wrapper">
+          <div class="form__field form__field--cat-info" role="group" aria-labelledby="cat-information">
+            <h2 class="visually-hidden" id="cat-information">Данные вашего кота.</h2>
+            <ul class="form__list">
+              <li class="form__item form__item--text">
+                <label class="form__label" for="cat-name">Имя:*</label>
+                <input class="form__control form__control--text" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="form__item form__item--text">
+                <label class="form__label" for="cat-weight">Вес (кг):*</label>
+                <input class="form__control form__control--text" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </li>
+              <li class="form__item form__item--text">
+                <label class="form__label" for="cat-age">Возраст (лет):</label>
+                <input class="form__control form__control--text" type="number" name="cat-age" id="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="form__field" role="group" aria-labelledby="feed-program">
-          <h2 class="visually-hidden" id="feed-program">Выбор программы питания.</h2>
-          <ul class="form__list">
-            <li class="form__item form__item--radio">
-              <input class="form__control form__control--radio" type="radio" name="program" id="program-slim" value="slim" checked>
-              <label class="form__label" for="program-slim">Похудение</label>
-            </li>
-            <li class="form__item form__item--radio">
-              <input class="form__control form__control--radio" type="radio" name="program" id="program-gain" value="gain">
-              <label class="form__label" for="program-gain">Набор массы</label>
-            </li>
-            <li class="form__item form__item--radio">
-              <input class="form__control form__control--radio" type="radio" name="program" id="program-advice" value="need-advice">
-              <label class="form__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
+        <div class="form__field-wrapper">
+          <div class="form__field form__field--program" role="group" aria-labelledby="feed-program">
+            <h2 class="visually-hidden" id="feed-program">Выбор программы питания.</h2>
+            <ul class="form__list form__list--program">
+              <li class="form__item form__item--radio">
+                <input class="form__control form__control--radio" type="radio" name="program" id="program-slim" value="slim" checked>
+                <label class="form__label" for="program-slim">Похудение</label>
+              </li>
+              <li class="form__item form__item--radio">
+                <input class="form__control form__control--radio" type="radio" name="program" id="program-gain" value="gain">
+                <label class="form__label" for="program-gain">Набор массы</label>
+              </li>
+              <li class="form__item form__item--radio">
+                <input class="form__control form__control--radio" type="radio" name="program" id="program-advice" value="need-advice">
+                <label class="form__label" for="program-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="form__field" role="group" aria-labelledby="cats-owner">
         <h2 class="form__title" id="cats-owner">Контактные данные (владельца кота)</h2>
-        <div class="container">
-          <ul class="form__list">
+        <div class="container--form">
+          <ul class="form__list form__list--owner">
             <li class="form__item form__item--text">
               <label class="form__label" for="e-mail">E-mail:*</label>
               <input class="form__control form__control--text" type="email" name="e-mail" id="e-mail" placeholder="кuklachev@gmail.com"
@@ -95,14 +103,14 @@
       </div>
       <div class="form__field">
         <label class="form__title" for="comment">Оставьте Комментарий</label>
-        <div class="container">
+        <div class="container--form">
           <textarea class="form__control form__control--textarea" name="comment" id="comment" cols="30" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="form__field" role="group" aria-labelledby="additional-products">
         <h2 class="form__title" id="additional-products">Дополнительно</h2>
-        <div class="container">
+        <div class="container--form">
           <ul class="form__list form__list--additionally">
             <li class="form__item form__item--checkbox">
               <input class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -123,7 +131,7 @@
           </ul>
         </div>
       </div>
-      <div class="container">
+      <div class="container--form form__buttons-wrapper">
         <button class="button form__button" type="submit">Отправить заявку</button>
         <span class="form__message">* — Обязательные поля</span>
       </div>
