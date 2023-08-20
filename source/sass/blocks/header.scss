@@ -78,4 +78,20 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:active {
+    opacity: 50%;
+  }
+}
+
+.header__burger--opened {
+  background-image: url("../img/icons/icon-close.svg");
+}
+
+.header__burger--closed {
+  background-image: url("../img/icons/icon-burger.svg");
+}
+
+.header__burger--nojs {
+  display: none;
 }

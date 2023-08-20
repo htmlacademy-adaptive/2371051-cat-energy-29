@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   font-family: $oswald-font;
   color: $title-color;
 }
@@ -7,6 +8,19 @@
   @media (min-width: $desktop-width) {
     color: $text-light;
   }
+}
+
+.navigation--opened .navigation__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  background-color: #ffffff;
+}
+
+.navigation--closed .navigation__list {
+  display: none;
 }
 
 .navigation__list {
@@ -27,6 +41,20 @@
   }
 }
 
+.navigation__link-wrapper {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .navigation__link {
   display: block;
   padding: 22px 0 24px;
@@ -37,18 +65,18 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 0;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     line-height: 30px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .navigation__link--current::after {
     position: absolute;
     content: "";
@@ -58,14 +86,20 @@
     width: 100%;
     bottom: -10px;
   }
+}
 
-  .navigation__link--current_index::after {
+.navigation__link--current_index::after {
+  @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    background-color: #ffffff;
+    background-color: $theme-color;
     height: 2px;
     left: 0;
     width: 100%;
     bottom: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
