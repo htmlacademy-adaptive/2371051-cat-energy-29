@@ -238,11 +238,15 @@
 }
 
 .form__control--checkbox:checked::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 26px;
+  height: 26px;
   transform: translate(-50%, -50%);
-  // Добавить галочку
+  background-image: url("../img/icons/checkbox-tick.svg");
+  background-size: 26px 26px;
 }
 
 .form__control--text {
