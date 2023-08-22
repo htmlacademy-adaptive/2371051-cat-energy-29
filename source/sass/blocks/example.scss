@@ -1,36 +1,153 @@
 .example {
-  background-color: $basic-grey;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #eaeaea;
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "title slider"
+      "text slider"
+      "descriptions slider";
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    grid-area: title;
+  }
+
+  .example__text {
+    grid-area: text;
+  }
+
+  .example__wrapper {
+    grid-area: descriptions;
+  }
+
+  .example__slider {
+    grid-area: slider;
+  }
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-family: $oswald-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
-  color: $basic-black;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  column-gap: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 42px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 75px;
+  }
 }
 
 .example__value {
+  margin-bottom: 8px;
+
   font-family: $oswald-font;
-  color: $basic-black;
+  color: #000000;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
+  margin: 0;
+
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__expenses {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-family: $oswald-font;
-  color: $basic-black;
+  color: #000000;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.example__sum {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 63px;
+  }
 }

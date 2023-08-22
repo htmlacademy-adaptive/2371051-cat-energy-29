@@ -1,7 +1,21 @@
 .main-container__title {
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 27px;
+
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $basic-black;
+  color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+}
+
+.main-container__title--form {
+  margin-bottom: 37px;
 }

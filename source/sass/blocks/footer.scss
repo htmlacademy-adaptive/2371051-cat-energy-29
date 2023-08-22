@@ -1,20 +1,122 @@
 .footer {
-  background-color: $basic-grey;
+  background-color: $highlight-background;
 }
 
-.footer__invitation {
+.footer__container--index {
+  background-color: #ffffff;
+}
+
+.footer__partnership {
+  margin: 0;
+
   font-family: $oswald-font;
   color: #111111;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .footer__adress {
   font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.footer__wrapper--index {
-  background-color: $basic-white;
+.footer__wrapper {
+  position: relative;
+}
+
+.footer__wrapper-partnership {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  min-height: 112px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 200px;
+    justify-content: space-between;
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 78px 60px 80px;
+  }
+}
+
+.footer__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.footer__links-wrapper {
+  display: grid;
+  justify-items: center;
+  padding: 40px 0;
+  row-gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 0;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
+  }
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__copyright {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+
+.footer__map {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 362px;
+  width: 100%;
+
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

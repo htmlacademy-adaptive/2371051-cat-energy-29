@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    align-items: baseline;
+    width: 174px;
+  }
+}
+
+.logo--footer {
+  width: 128px;
+}

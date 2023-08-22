@@ -1,10 +1,77 @@
 .gift {
-  background-color: $basic-green;
-  color: $basic-white;
+  position: relative;
+  min-height: 290px;
+  padding-top: 187px;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 20px;
+
+  color: $text-light;
+  background-color: $theme-color;
+  background-image: url("../img/backgrounds/gift-background-small.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding-top: 71px;
+    padding-left: 421px;
+    padding-right: 125px;
+    padding-bottom: 69px;
+
+    background-image: url("../img/backgrounds/gift-background-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 288px;
+    padding-top: 185px;
+    padding-left: 42px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+
+    background-image: url("../img/backgrounds/gift-background-small.png");
+    background-position: right top;
+  }
+}
+
+.gift::before {
+  position: absolute;
+  top: 59px;
+  left: 101px;
+  content: "";
+  height: 78px;
+  width: 80px;
+  background-image: url("../img/icons/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 77px;
+    height: 82px;
+    width: 80px;
+    background-size: 82px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    height: 83px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    background-size: 83px 80px;
+  }
 }
 
 .gift__text {
+  margin: 0;
+
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

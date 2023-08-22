@@ -1,15 +1,78 @@
-.card__title {
-  font-family: $oswald-font;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $special-dark-grey-2;
-  text-transform: uppercase;
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 17px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0 37px 40px 37px;
+    min-height: 511px;
+    background-image: linear-gradient(to bottom, transparent 81px, #f2f2f2 81px);
+  }
 }
 
-.card__feature,
-.card__value {
+.card__image-link {
+  display: block;
+}
+
+.card__image {
+  display: block;
+}
+
+.card__link {
+  display: block;
+}
+
+.card__title {
+  min-width: 50px;
+  max-width: 76px;
+  margin: 0;
+
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $card-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.card__list {
+  @include list;
+
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__value {
+  margin: 0;
+}
+
+.card__button {
+  grid-column: 1/-1;
 }
