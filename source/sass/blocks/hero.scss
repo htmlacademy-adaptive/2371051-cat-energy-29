@@ -82,6 +82,13 @@
     width: 709px;
     height: 609px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: auto;
+    bottom: auto;
+    top: 143px;
+    left: 447px;
+  }
 }
 
 .hero__button {

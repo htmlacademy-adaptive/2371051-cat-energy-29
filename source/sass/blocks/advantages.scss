@@ -56,19 +56,49 @@
   }
 }
 
+.advantages__item--leaf {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
 .advantages__item::before {
   content: "";
   display: block;
   margin-right: 20px;
-  float: left;
   width: 60px;
   height: 60px;
   flex-shrink: 0;
   background-color: $theme-color;
 
   @media (min-width: $tablet-width) {
-    float: none;
+    width: 80px;
+    height: 80px;
   }
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../img/icons/icon-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--powder::before {
+  background-image: url("../img/icons/icon-powder.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--food::before {
+  background-image: url("../img/icons/icon-eat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--time::before {
+  background-image: url("../img/icons/icon-time.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages__description {

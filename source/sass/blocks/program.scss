@@ -151,15 +151,19 @@
 .program__description {
   margin: 0;
   padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    border-bottom: none;
   }
 }
 
 .program__link {
   display: block;
   margin-top: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   font-family: $oswald-font;
   color: #000000;
@@ -170,5 +174,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
