@@ -296,6 +296,10 @@
 .form__control--email,
 .form__control--phone {
   padding-right: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 48px;
+  }
 }
 
 .form__control--textarea {
