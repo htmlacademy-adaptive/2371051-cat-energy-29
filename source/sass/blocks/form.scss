@@ -169,6 +169,8 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
@@ -425,4 +427,17 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
   }
+}
+
+.form__control--radio:hover:not(:disabled),
+.form__control--checkbox:hover:not(:disabled) {
+  border: 1px solid #bababa;
+}
+
+.form__control--checkbox:disabled,
+.form__control--checkbox:disabled + .form__label,
+.form__control--radio:disabled,
+.form__control--radio:disabled + .form__label {
+  opacity: 0.3;
+  cursor: default;
 }
