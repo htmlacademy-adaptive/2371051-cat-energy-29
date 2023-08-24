@@ -57,6 +57,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    row-gap: 8px;
     margin-bottom: 32px;
 
     font-size: 16px;
@@ -67,6 +69,11 @@
 .card__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .card__value {
