@@ -137,9 +137,25 @@
 }
 
 .form__item--text {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 13px;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
 }
 
 .form__item--text:not(:last-child) {
@@ -279,7 +295,7 @@
 
 .form__control--email,
 .form__control--phone {
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .form__control--textarea {
