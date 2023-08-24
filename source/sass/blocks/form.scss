@@ -166,7 +166,7 @@
   }
 }
 
-.form__list--owner > .form__item--text {
+.form__list--owner>.form__item--text {
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -308,6 +308,10 @@
 
   border: 1px solid #e7e7e7;
   resize: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .form__title {
@@ -474,4 +478,9 @@
 .form__control--radio:disabled + .form__label {
   opacity: 0.3;
   cursor: default;
+}
+
+.form__control--radio + .form__label,
+.form__control--checkbox + .form__label {
+  cursor: pointer;
 }

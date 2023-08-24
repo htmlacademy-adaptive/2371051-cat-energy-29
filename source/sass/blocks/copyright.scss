@@ -21,11 +21,11 @@
 }
 
 .copyright__link:hover .copyright__image {
-  fill: #68B738;
+  fill: $theme-color;
 }
 
 .copyright__link:active .copyright__image,
 .copyright__link:active .copyright__text {
-  fill: #68B738;
+  fill: $theme-color;
   opacity: 0.3;
 }
