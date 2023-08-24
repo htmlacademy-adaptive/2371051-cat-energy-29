@@ -75,6 +75,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:hover:not(.navigation__link--current, .navigation__link--current_index) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.navigation__link--current, .navigation__link--current_index) {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
