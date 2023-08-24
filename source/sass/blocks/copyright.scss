@@ -1,4 +1,4 @@
-.copyright__link {
+.copyright__text {
   color: $basic-text;
   font-size: 16px;
   line-height: 20px;
@@ -6,4 +6,26 @@
 
 .copyright__logo {
   height: 34px;
+}
+
+
+.copyright__link {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+.copyright__link:hover .copyright__image {
+  fill: #68B738;
+}
+
+.copyright__link:active .copyright__image,
+.copyright__link:active .copyright__text {
+  fill: #68B738;
+  opacity: 0.3;
 }

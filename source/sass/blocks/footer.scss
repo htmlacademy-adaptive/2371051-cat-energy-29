@@ -92,17 +92,6 @@
   flex-direction: column;
 }
 
-.footer__copyright {
-  display: flex;
-  width: 280px;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 168px;
-  }
-}
-
 
 .footer__map {
   display: block;

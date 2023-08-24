@@ -1,5 +1,17 @@
 .slider {
+  position: relative;
+  height: 256px;
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     min-height: 512px;
   }
 }
+
+.slider__before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
