@@ -13,3 +13,12 @@
 .logo--footer {
   width: auto;
 }
+
+.logo--footer:hover .logo__text path,
+.logo--footer:focus-visible .logo__text path {
+  fill: #3e3e3e;
+}
+
+.logo--footer:active .logo__text path {
+  fill: #6b6b6b;
+}
