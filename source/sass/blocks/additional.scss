@@ -1,12 +1,17 @@
-.additional {
-  padding-bottom: 35px;
-}
+
 
 .additional__container {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 235px;
     column-gap: 80px;
+    margin-bottom: 87px;
   }
 }
 
@@ -64,14 +69,28 @@
 
 .additional__list {
   @include list;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    margin-bottom: 0;
   }
 }
 
 .additional__gift {
   @media (min-width: $desktop-width) {
     grid-column: -1/-2;
+  }
+}
+
+.additional__item {
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
   }
 }
