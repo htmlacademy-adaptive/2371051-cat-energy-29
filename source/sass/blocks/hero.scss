@@ -3,9 +3,14 @@
   text-align: center;
   color: $text-light;
   background-color: $theme-color;
-  background-image: url("../img/backgrounds/background-hero-mobile.png"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
+  background-image: url("../img/backgrounds/background-hero-mobile.jpg"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/background-hero-mobile@2x.jpg"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -13,12 +18,15 @@
     background-color: #ffffff;
     background-image: none;
   }
-}
 
-.hero--index {
   @media (min-width: $desktop-width) {
-    background-image: url("../img/backgrounds/background-index-desktop.png"), linear-gradient(to right, #ffffff 50%, #64a73b 50%);
+    background-image: url("../img/backgrounds/background-hero-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #64a73b 50%);
     background-position: right top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/background-hero-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #64a73b 50%);
+      background-size: auto 694px;
+    }
   }
 }
 
