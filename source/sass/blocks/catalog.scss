@@ -75,17 +75,26 @@
   width: 2px;
   background-color: #d3d3d3;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+  }
 }
 
 .catalog__subtitle::after {
   position: absolute;
-  top: 1px;
+  top: 14px;
   left: 50%;
-  transform: rotate(90deg) translateX(-50%);
-  height: 30px;
-  width: 2px;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 30px;
   background-color: #d3d3d3;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 28px;
+    width: 60px;
+  }
 }
 
 .catalog__text {

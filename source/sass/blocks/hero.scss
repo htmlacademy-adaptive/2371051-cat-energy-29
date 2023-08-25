@@ -2,14 +2,13 @@
   font-family: $oswald-font;
   text-align: center;
   color: $text-light;
-  background-color: $theme-color;
   background-image: url("../img/backgrounds/background-hero-mobile.jpg"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
   background-repeat: no-repeat;
   background-position: top center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/background-hero-mobile@2x.jpg"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
-    background-size: 320px auto;
+    background-size: auto 303px;
   }
 
   @media (min-width: $tablet-width) {
