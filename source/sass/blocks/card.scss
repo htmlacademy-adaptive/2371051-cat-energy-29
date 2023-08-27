@@ -21,6 +21,16 @@
 
 .card__image {
   display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .card__link {
