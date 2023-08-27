@@ -5,8 +5,21 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    align-items: baseline;
     width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -21,4 +34,22 @@
 
 .logo--footer:active .logo__text path {
   fill: #6b6b6b;
+}
+
+.logo__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.logo__text {
+  display: block;
 }

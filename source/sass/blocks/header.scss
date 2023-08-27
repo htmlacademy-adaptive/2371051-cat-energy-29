@@ -1,7 +1,7 @@
 .header__container {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 
     width: 768px;
