@@ -142,10 +142,15 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__before">
-            <img class="slider__image slider__image--before" src="img/cat-before.png" width="280" height="256" alt="Худой кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+              <img class="slider__image slider__image--before" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+            </picture>
           </div>
           <div class="slider__after">
-            <img class="slider__image slider__image--after" src="img/cat-after.png" width="280" height="256" alt="Толстенький кот.">
+            <picture>
+              <img class="slider__image slider__image--after" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Толстенький кот.">
+            </picture>
           </div>
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Сравнить кота до и после похудения.</span>

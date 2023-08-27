@@ -166,7 +166,7 @@
   }
 }
 
-.form__list--owner>.form__item--text {
+.form__list--owner > .form__item--text {
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -251,6 +251,11 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__control--checkbox:checked::before {
@@ -263,6 +268,12 @@
   transform: translate(-50%, -50%);
   background-image: url("../img/icons/checkbox-tick.svg");
   background-size: 26px 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
+  }
 }
 
 .form__control--text {
@@ -483,4 +494,9 @@
 .form__control--radio + .form__label,
 .form__control--checkbox + .form__label {
   cursor: pointer;
+}
+
+.form__control--email:focus + .form__icon path,
+.form__control--phone:focus + .form__icon path {
+  stroke: $theme-color;
 }
