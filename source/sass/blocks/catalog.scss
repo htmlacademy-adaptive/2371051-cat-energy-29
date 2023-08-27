@@ -1,5 +1,6 @@
 .catalog__list {
   @include list;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -9,6 +10,7 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
