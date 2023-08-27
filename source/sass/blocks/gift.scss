@@ -8,8 +8,13 @@
 
   color: $text-light;
   background-color: $theme-color;
-  background-image: url("../img/backgrounds/gift-background-small.png");
+  background-image: url("../img/backgrounds/gift-background-small.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/gift-background-small@2x.jpg");
+    background-size: 280px auto;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
@@ -18,7 +23,12 @@
     padding-right: 125px;
     padding-bottom: 69px;
 
-    background-image: url("../img/backgrounds/gift-background-tablet.png");
+    background-image: url("../img/backgrounds/gift-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-background-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,8 +38,13 @@
     padding-right: 40px;
     padding-bottom: 30px;
 
-    background-image: url("../img/backgrounds/gift-background-small.png");
+    background-image: url("../img/backgrounds/gift-background-small.jpg");
     background-position: right top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/gift-background-small@2x.jpg");
+      background-size: 280px auto;
+    }
   }
 }
 
