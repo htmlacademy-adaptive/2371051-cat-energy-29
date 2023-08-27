@@ -20,7 +20,11 @@
         <div class="header__main-header">
           <div class="header__wrapper">
             <a class="logo" aria-current="page">
-              <img class="logo__image" src="img/logo-pic-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-pic-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-pic-tablet.svg">
+                <img class="logo__image" src="img/logo-pic-mobile.svg" alt="Логотип Cat Energy." width="33" height="38">
+              </picture>
               <img class="logo__text logo__text--header" src="img/logo-text-mobile.svg" alt="Текстовый Логотип Cat Energy." width="101" height="18">
             </a>
             <button class="header__burger header__burger--nojs header__burger--closed" type="button">
@@ -138,10 +142,10 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__before">
-            <img class="slider__image slider__image--before" src="img/cat-before.png" alt="Худой кот.">
+            <img class="slider__image slider__image--before" src="img/cat-before.png" width="280" height="256" alt="Худой кот.">
           </div>
           <div class="slider__after">
-            <img class="slider__image slider__image--after" src="img/cat-after.png" alt="Толстенький кот.">
+            <img class="slider__image slider__image--after" src="img/cat-after.png" width="280" height="256" alt="Толстенький кот.">
           </div>
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Сравнить кота до и после похудения.</span>

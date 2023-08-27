@@ -1,6 +1,5 @@
 .example {
   padding-top: 25px;
-  padding-bottom: 40px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +14,12 @@
 }
 
 .example__container {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 101px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-areas:
@@ -192,4 +197,8 @@
     display: inline-block;
     margin-left: 63px;
   }
+}
+
+.example__slider {
+  margin: 0 auto;
 }
