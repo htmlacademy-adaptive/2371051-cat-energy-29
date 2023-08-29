@@ -25,6 +25,7 @@
 
 .logo--footer {
   width: auto;
+  height: auto;
 }
 
 .logo--footer:hover .logo__text path,
@@ -52,4 +53,9 @@
 
 .logo__text {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }

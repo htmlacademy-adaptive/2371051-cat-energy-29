@@ -8,7 +8,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/background-hero-mobile@2x.jpg"), linear-gradient(to bottom, #63a63a 303px, #ffffff 303px);
-    background-size: auto 303px;
+    background-size: auto 302px;
   }
 
   @media (min-width: $tablet-width) {
@@ -81,6 +81,7 @@
 .hero__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -93,7 +94,7 @@
   @media (min-width: $desktop-width) {
     right: auto;
     bottom: auto;
-    top: 143px;
+    top: 114px;
     left: 447px;
 
     width: 552px;

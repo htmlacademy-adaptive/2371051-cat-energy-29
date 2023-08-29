@@ -64,9 +64,24 @@
   }
 }
 
+.footer__street {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
 .footer__city {
   @media (min-width: $tablet-width) {
     display: block;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -78,7 +93,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 55px 0;
     align-items: center;
   }
@@ -92,6 +106,19 @@
   flex-direction: column;
 }
 
+.footer__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+}
+
+.footer__copyright {
+  margin-left: auto;
+}
 
 .footer__map {
   display: block;

@@ -3,13 +3,15 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    padding-top: 45px;
     border-top: 1px solid #e6e6e6;
     background: linear-gradient(to top, #eaeaea, #eaeaea 462px, transparent 462px, transparent 100%);
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     border-top: none;
-    background: linear-gradient(to bottom, transparent, transparent 160px, $highlight-background 160px, $highlight-background 100%);
+    background: linear-gradient(to bottom, transparent, transparent 135px, $highlight-background 135px, $highlight-background 100%);
   }
 }
 
@@ -21,11 +23,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 0;
     display: grid;
     grid-template-areas:
       "title slider"
       "text slider"
       "descriptions slider";
+      column-gap: 220px;
   }
 }
 
@@ -78,6 +82,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
     max-width: 440px;
   }
 }
@@ -93,13 +98,17 @@
     column-gap: 42px;
     grid-template-columns: 162px 162px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +120,7 @@
 .example__value {
   padding-top: 14px;
   padding-bottom: 18px;
-  margin-bottom: -10px;
+  margin-bottom: -7px;
 
   font-family: $oswald-font;
   color: #000000;
@@ -178,11 +187,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-top: 10px;
     font-size: 20px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: left;
   }
 }
