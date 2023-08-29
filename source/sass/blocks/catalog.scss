@@ -16,7 +16,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 63px;
 
     width: 1300px;
     padding: 0 40px;
@@ -115,6 +116,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
 }
 
 .catalog__card-wrapper {
@@ -144,6 +149,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 430px;
+    justify-content: flex-start;
 
     border: 2px solid #f2f2f2;
   }
