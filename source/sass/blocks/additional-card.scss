@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 27px 38px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -15,7 +15,7 @@
     grid-template-columns: 245px 80px 245px 80px 245px;
     padding: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     align-items: baseline;
   }
 }
@@ -35,6 +35,9 @@
   @media (min-width: $tablet-width) {
     margin-right: auto;
     margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,11 +51,16 @@
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-card__description {
   @media (min-width: $tablet-width) {
-    margin-right: 50px;
+    margin-right: 53px;
   }
 
   @media (min-width: $desktop-width) {

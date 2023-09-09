@@ -23,9 +23,27 @@
       line-height: 26px;
     }
   }
+
+  &:hover:not(:disabled) {
+    background-color: $button-hover;
+  }
+
+  &:active:not(:disabled) {
+    background-color: $button-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {
   color: $basic-text;
   background-color: $highlight-background;
+
+  &:hover:not(:disabled) {
+    background-color: #ebebeb;
+  }
+
+  &:active:not(:disabled) {
+    background-color: #ebebeb;
+    color: inherit;
+  }
 }

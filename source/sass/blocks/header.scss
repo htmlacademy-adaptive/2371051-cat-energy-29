@@ -1,7 +1,7 @@
 .header__container {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 
     width: 768px;
@@ -17,6 +17,7 @@
     padding-left: 40px;
     padding-right: 40px;
     min-height: 59px;
+    margin-top: 55px;
   }
 }
 
@@ -84,12 +85,16 @@
   }
 }
 
-.header__burger--opened {
-  background-image: url("../img/icons/icon-close.svg");
-}
+@media (max-width: $mobile-width-only) {
+  .header__burger--opened {
+    display: block;
+    background-image: url("../img/icons/icon-close.svg");
+  }
 
-.header__burger--closed {
-  background-image: url("../img/icons/icon-burger.svg");
+  .header__burger--closed {
+    display: block;
+    background-image: url("../img/icons/icon-burger.svg");
+  }
 }
 
 .header__burger--nojs {

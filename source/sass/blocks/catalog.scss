@@ -1,5 +1,6 @@
 .catalog__list {
   @include list;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -9,12 +10,14 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 63px;
 
     width: 1300px;
     padding: 0 40px;
@@ -22,9 +25,26 @@
   }
 }
 
+.catalog__item {
+  border-bottom: 1px solid #ebebeb;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .catalog__subtitle {
+  position: relative;
   margin: 0;
-  margin-top: 53px;
+  padding-top: 53px;
   margin-bottom: 8px;
 
   font-family: $oswald-font;
@@ -36,12 +56,47 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-top: 110px;
+    padding-top: 110px;
     margin-bottom: 23px;
     width: 134px;
 
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.catalog__subtitle::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30px;
+  width: 2px;
+  background-color: #d3d3d3;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+  }
+}
+
+.catalog__subtitle::after {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 30px;
+  background-color: #d3d3d3;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 28px;
+    width: 60px;
   }
 }
 
@@ -61,6 +116,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
 }
 
 .catalog__card-wrapper {
@@ -79,9 +138,19 @@
   @media (min-width: $tablet-width) {
     padding: 50px 37px 40px 37px;
     margin: 0;
+    margin-top: 81px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 511px;
+    min-height: 324px;
+
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 430px;
+    justify-content: flex-start;
+
+    border: 2px solid #f2f2f2;
   }
 }

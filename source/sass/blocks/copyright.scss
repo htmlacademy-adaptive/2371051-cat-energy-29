@@ -1,9 +1,36 @@
-.copyright__link {
+.copyright__text {
   color: $basic-text;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+  }
 }
 
-.copyright__logo {
-  height: 34px;
+
+.copyright__link {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    min-height: 37px;
+  }
+}
+
+.copyright__image {
+  fill: #666666;
+}
+
+.copyright__link:hover .copyright__image {
+  fill: $theme-color;
+}
+
+.copyright__link:active .copyright__image,
+.copyright__link:active .copyright__text {
+  fill: $theme-color;
+  opacity: 0.3;
 }

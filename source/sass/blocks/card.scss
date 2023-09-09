@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 17px;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -17,20 +17,44 @@
 
 .card__image-link {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .card__image {
   display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
 }
 
 .card__link {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .card__title {
   min-width: 50px;
   max-width: 76px;
   margin: 0;
+  margin-bottom: 14px;
 
   font-family: $oswald-font;
   font-size: 16px;
@@ -47,6 +71,10 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .card__list {
@@ -57,16 +85,27 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    row-gap: 8px;
     margin-bottom: 32px;
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 10px;
   }
 }
 
 .card__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .card__value {
