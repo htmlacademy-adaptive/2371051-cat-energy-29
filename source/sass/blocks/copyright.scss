@@ -8,10 +8,6 @@
   }
 }
 
-.copyright__logo {
-  height: 34px;
-}
-
 
 .copyright__link {
   display: flex;
@@ -23,6 +19,10 @@
     width: 168px;
     min-height: 37px;
   }
+}
+
+.copyright__image {
+  fill: #666666;
 }
 
 .copyright__link:hover .copyright__image {

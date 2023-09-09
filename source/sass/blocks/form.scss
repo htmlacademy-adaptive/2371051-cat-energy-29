@@ -148,6 +148,8 @@
   top: 50%;
   transform: translateY(-50%);
   right: 13px;
+  fill: none;
+  stroke: #222222;
 
   @media (min-width: $tablet-width) {
     right: 14px;
@@ -526,7 +528,7 @@
   cursor: pointer;
 }
 
-.form__control--email:focus + .form__icon path,
-.form__control--phone:focus + .form__icon path {
+.form__control--email:focus + .form__icon,
+.form__control--phone:focus + .form__icon {
   stroke: $theme-color;
 }
