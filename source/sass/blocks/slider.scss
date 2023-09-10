@@ -66,17 +66,21 @@
   }
 }
 
-.slider__toggle:hover .slider__toggle-image rect {
-  stroke: $theme-color;
+.slider__toggle-image {
+  color: #666666;
 }
 
-.slider__toggle:active .slider__toggle-image rect {
-  stroke: rgba(94, 170, 47, 0.6);
+.slider__toggle:hover .slider__toggle-image {
+  color: $theme-color;
 }
 
-.slider__toggle:hover .slider__toggle-image path {
-  fill: $theme-color;
+.slider__toggle:active .slider__toggle-image {
+  color: rgba(94, 170, 47, 0.6);
 }
+
+// .slider__toggle:hover .slider__toggle-image path {
+//   fill: $theme-color;
+// }
 
 .slider__toggle:active .slider__toggle-image path {
   fill: #5eaa2f;

@@ -22,10 +22,12 @@
 }
 
 .copyright__image {
+  flex-shrink: 0;
   fill: #666666;
 }
 
-.copyright__link:hover .copyright__image {
+.copyright__link:hover .copyright__image,
+.copyright__link:focus-visible .copyright__image {
   fill: $theme-color;
 }
 
