@@ -304,11 +304,16 @@
     border: 1px solid #444444;
     box-shadow: inset 0 0 0 1px #444444;
   }
+}
 
-  &_error {
-    border: 1px solid #ff8282;
-    box-shadow: inset 0 0 0 1px #ff8282;
-  }
+// Добавить этот класс для состояния ошибки
+.form__control--text_error {
+  border: 1px solid #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
+}
+
+.form__control--text_error + .form__icon {
+  stroke: #ff8282;
 }
 
 .form__control--email,
