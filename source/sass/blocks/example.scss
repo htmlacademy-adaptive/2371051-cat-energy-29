@@ -188,6 +188,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+    max-width: 220px;
+
     font-size: 20px;
     text-align: right;
   }
@@ -195,6 +197,8 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
     margin-bottom: 0;
+    max-width: none;
+
     text-align: left;
   }
 }
