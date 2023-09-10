@@ -176,7 +176,8 @@
 
 .form__item--checkbox,
 .form__item--radio {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   align-items: center;
   gap: 15px;
 
@@ -186,7 +187,6 @@
 }
 
 .form__label {
-  flex-shrink: 0;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -506,7 +506,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
