@@ -316,7 +316,7 @@
 }
 
 .form__control--text_error + .form__icon {
-  stroke: #ff8282;
+  color: #ff8282;
 }
 
 .form__control--email,
@@ -538,5 +538,5 @@
 
 .form__control--email:focus + .form__icon,
 .form__control--phone:focus + .form__icon {
-  stroke: $theme-color;
+  color: $theme-color;
 }
