@@ -26,7 +26,8 @@
             </picture>
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg">
-              <img class="logo__text logo__text--header" src="img/logo-text-mobile.svg" alt="Текстовый Логотип Cat Energy." width="101" height="18">
+              <img class="logo__text logo__text--header" src="img/logo-text-mobile.svg"
+                alt="Текстовый Логотип Cat Energy." width="101" height="18">
             </picture>
           </a>
           <button class="header__burger header__burger--nojs header__burger--closed" type="button">
@@ -37,13 +38,19 @@
       <nav class="navigation navigation--nojs navigation--closed">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <div class="navigation__link-wrapper">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </div>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            <div class="navigation__link-wrapper">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </div>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="#" aria-current="page">Подбор программы</a>
+            <div class="navigation__link-wrapper">
+              <a class="navigation__link navigation__link--current" href="#" aria-current="page">Подбор программы</a>
+            </div>
           </li>
         </ul>
       </nav>
@@ -219,8 +226,7 @@
             <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Телеграмм</span>
-                <svg class="social__icon" width="28" height="22" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="social__icon" width="28" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#telegram-icon"></use>
                 </svg>
               </a>
