@@ -8,6 +8,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 896px 245px;
+    align-items: start;
     column-gap: 80px;
     margin-bottom: 87px;
   }

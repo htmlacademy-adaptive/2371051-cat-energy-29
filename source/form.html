@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -58,11 +60,11 @@
   </header>
 
   <main class="main-container">
-    <div class="container--form">
+    <div class="container container--form">
       <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="container--form">
+      <div class="container container--form">
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <div class="form__wrapper">
@@ -115,7 +117,7 @@
         <div class="form__title-wrapper form__title-wrapper--owner">
           <h2 class="form__title form__title--owner" id="cats-owner">Контактные данные (владельца кота)</h2>
         </div>
-        <div class="container--form">
+        <div class="container container--form">
           <ul class="form__list form__list--owner">
             <li class="form__item form__item--text">
               <label class="form__label" for="e-mail">E-mail:*</label>
@@ -140,7 +142,7 @@
         <div class="form__title-wrapper form__title-wrapper--comment">
           <label class="form__title" for="comment">Комментарий</label>
         </div>
-        <div class="container--form">
+        <div class=" container container--form">
           <textarea class="form__control form__control--textarea" name="comment" id="comment" cols="30" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
@@ -149,7 +151,7 @@
         <div class="form__title-wrapper form__title-wrapper--additionally">
           <h2 class="form__title" id="additional-products">Дополнительно</h2>
         </div>
-        <div class="container--form">
+        <div class="container container--form">
           <ul class="form__list form__list--additionally">
             <li class="form__item form__item--checkbox">
               <input class="form__control form__control--checkbox" type="checkbox" name="sweetener" id="sweetener"
@@ -171,7 +173,7 @@
           </ul>
         </div>
       </div>
-      <div class="container--form form__buttons-wrapper">
+      <div class="container container--form form__buttons-wrapper">
         <button class="button form__button" type="submit">Отправить заявку</button>
         <span class="form__message">* — Обязательные поля</span>
       </div>
@@ -199,7 +201,8 @@
     <div class="container">
       <div class="footer__links-wrapper">
         <div class="footer__logo-wrapper">
-          <a class="footer__logo logo logo--footer" href="#">
+          <a class="footer__logo logo logo--footer" href="index.html">
+            <span class="visually-hidden">Логотип Cat Energy</span>
             <svg class="footer__logo-img" width="128" height="24">
               <use xlink:href="img/sprite.svg#logo-text-mobile"></use>
             </svg>
