@@ -70,7 +70,8 @@
   color: #666666;
 }
 
-.slider__toggle:hover .slider__toggle-image {
+.slider__toggle:hover .slider__toggle-image,
+.slider__toggle:focus-visible .slider__toggle-image {
   color: $theme-color;
 }
 
@@ -78,7 +79,8 @@
   color: rgba(94, 170, 47, 0.6);
 }
 
-.slider__toggle:hover::before {
+.slider__toggle:hover::before,
+.slider__toggle:focus-visible::before {
   background-color: $theme-color;
 }
 
