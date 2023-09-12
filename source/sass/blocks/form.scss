@@ -288,6 +288,7 @@
   padding-right: 10px;
   height: 45px;
   flex-grow: 1;
+  width: 170px;
 
   border: 1px solid #e7e7e7;
   appearance: textfield;
@@ -295,6 +296,7 @@
   @media (min-width: $tablet-width) {
     height: 52px;
     padding-left: 20px;
+    width: auto;
   }
 
   &:hover {
