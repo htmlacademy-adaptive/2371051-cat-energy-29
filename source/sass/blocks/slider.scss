@@ -78,15 +78,6 @@
   color: rgba(94, 170, 47, 0.6);
 }
 
-// .slider__toggle:hover .slider__toggle-image path {
-//   fill: $theme-color;
-// }
-
-.slider__toggle:active .slider__toggle-image path {
-  fill: #5eaa2f;
-  opacity: 0.6;
-}
-
 .slider__toggle:hover::before {
   background-color: $theme-color;
 }
