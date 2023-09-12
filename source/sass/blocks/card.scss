@@ -28,7 +28,8 @@
   }
 }
 
-.card__image-link:hover {
+.card__image-link:hover,
+.card__image-link:focus-visible {
   opacity: 0.9;
 }
 
