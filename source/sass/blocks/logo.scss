@@ -29,12 +29,12 @@
   height: auto;
 }
 
-.logo--footer:hover .logo__text path,
-.logo--footer:focus-visible .logo__text path {
+.logo--footer:hover .logo__text,
+.logo--footer:focus-visible .logo__text {
   fill: #3e3e3e;
 }
 
-.logo--footer:active .logo__text path {
+.logo--footer:active .logo__text {
   fill: #6b6b6b;
 }
 
