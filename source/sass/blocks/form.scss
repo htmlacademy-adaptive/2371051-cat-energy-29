@@ -297,6 +297,8 @@
     height: 52px;
     padding-left: 20px;
     width: auto;
+
+    font-size: 20px;
   }
 
   &:hover {
@@ -310,6 +312,10 @@
   }
 }
 
+.form__control--text::-webkit-inner-spin-button,
+.form__control--text::-webkit-outer-spin-button {
+  appearance: none;
+}
 
 // Добавить этот класс для состояния ошибки
 .form__control--text_error {
